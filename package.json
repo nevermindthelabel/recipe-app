@@ -1,0 +1,19 @@
+{
+  "name": "recipe-app",
+  "version": "1.0.0",
+  "description": "forkify app project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nevermindthelabel/recipe-app.git"
+  },
+  "author": "Matt Kilcup",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nevermindthelabel/recipe-app/issues"
+  },
+  "homepage": "https://github.com/nevermindthelabel/recipe-app#readme"
+}
