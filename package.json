@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/nevermindthelabel/recipe-app/issues"
   },
-  "homepage": "https://github.com/nevermindthelabel/recipe-app#readme"
+  "homepage": "https://github.com/nevermindthelabel/recipe-app#readme",
+  "devDependencies": {
+    "webpack": "^4.42.1"
+  }
 }
