@@ -8,6 +8,23 @@ ToDo - Liked recipes
 */
 const state = {};
 
-const search = new Search('pizza');
-console.log(search);
-console.log(search.getResults());
+const controlSearch = async () => {
+  // ToDo - Get query
+  const query = 'Pizza';
+  //
+  if (query) {
+    // if there is a query create new search and add it to the global app state
+    state.search = new Search(query);
+    // prepare UI for results
+    // search for recipes
+    await state.search.getResults();
+    // render results to UI
+    console.log(state.search.result);
+    console.log(state);
+  }
+}
+
+document.querySelector('.search').addEventListener('submit', e => {
+  e.preventDefault();
+  controlSearch();
+});
