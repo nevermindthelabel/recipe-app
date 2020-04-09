@@ -18,11 +18,12 @@ const controlSearch = async () => {
     // if there is a query create new search and add it to the global app state
     state.search = new Search(query);
     // prepare UI for results
+    searchView.clearInput();
+    searchView.clearResults();
     // search for recipes
     await state.search.getResults();
     // render results to UI
     searchView.renderResults(state.search.result);
-    searchView.clearInput();
   }
 }
 
