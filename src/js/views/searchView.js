@@ -8,7 +8,21 @@ export const clearInput = () => {
 
 export const clearResults = () => {
   elements.searchResultsList.innerHTML = '';
-}
+};
+
+const limitRecipeTitle = (title, limit = 17) => {
+  const newTitle = [];
+  if (title.length > limit) {
+    title.split(' ').reduce((acc, curr) => {
+      if (acc + curr.length <= limit) {
+        newTitle.push(curr);
+      }
+      return acc + curr.length;
+    }, 0);
+    return `${newTitle.join(' ')}${'...'}`;
+  }
+  return title;
+};
 
 const renderRecipe = recipe => {
   const markup = `
