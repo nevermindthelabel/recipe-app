@@ -12,7 +12,7 @@ const state = {};
 
 const controlSearch = async () => {
   // ToDo - Get query
-  const query = 'Pizza';
+  const query = searchView.getInput();
   //
   if (query) {
     // if there is a query create new search and add it to the global app state
