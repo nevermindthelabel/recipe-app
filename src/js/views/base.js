@@ -9,7 +9,7 @@ export const renderLoader = parent => {
   const loader = `
     <div className="loader">
       <svg>
-        <use href="dist/img/icons.svg#icon-cw"></use>
+        <use href="../../../dist/img/icons.svg#icon-cw"></use>
       </svg>
     </div>
   `;
